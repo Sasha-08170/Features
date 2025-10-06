@@ -11,6 +11,8 @@
 
 Проект разработан с акцентом на **юзабилити**, **адаптивность** и **легкость восприятия интерфейса**.
 
+<img width="1437" height="898" alt="Screenshot_2025_10_06-1" src="https://github.com/user-attachments/assets/4940303b-da47-44bc-a88c-4773f30a10a2" />
+
 ---
 
 ## Основные элементы
@@ -49,13 +51,3 @@
 
 ---
 
-<img width="1437" height="898" alt="Screenshot_2025_10_06-1" src="https://github.com/user-attachments/assets/4940303b-da47-44bc-a88c-4773f30a10a2" />
-
-
-```
-[ Header ]       — Логотип | Навигация
-[ Hero Section ] — Заголовок, подзаголовок, кнопка
-[ Features ]     — 3 карточки преимуществ
-[ Footer ]       — Контакты и копирайт
-[ Modal ]        — Всплывающее окно с сообщением
-```
