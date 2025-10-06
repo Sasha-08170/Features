@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хостинг від HOSTIQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+  <!-- === Блок: header === -->
+  <header class="header">
+    <div class="header__container container">
+      <h1 class="header__title">Хостинг від HOSTIQ</h1>
+      <p class="header__price">всього <span class="header__price-value">1587,60</span> грн. на рік</p>
+      <button class="header__button button" id="openModal">Хочу вибрати!</button>
+    </div>
+  </header>
+
+  <!-- === Блок: intro === -->
+  <section class="intro">
+    <div class="intro__container container">
+      <div class="intro__content">
+        <img src="https://hostiq.ua/images2019/design/sketch-cats-etc/vps-banner-cat.png" alt="Кот з сумкою HOSTIQ" class="intro__image">
+        <h2 class="intro__title">Вишуканий хостинг від HOSTIQ</h2>
+        <p class="intro__text">
+          Ми пропонуємо найкращий хостинг для сайту-візитки в Україні. Його головна перевага — це конструктор сайтів SitePro. 
+          З ним ви самі зробите стильний сайт-візитку за 15 хвилин, без технічних знань і допомоги програміста. 
+          Дізнайтеся більше про конструктор і переваги нижче:
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Блок: features === -->
+  <section class="features">
+    <div class="features__container container">
+      <div class="features__grid">
+
+        <article class="features__item feature">
+          <div class="feature__icon-circle feature__icon-circle--light-blue">
+            <img src="https://hostiq.ua/images2019/design/block_features-logo/virt-services-reporting.svg" alt="" class="feature__icon">
+          </div>
+          <div class="feature__content">
+            <h3 class="feature__title">Безкоштовний домен для сайту-візитки</h3>
+            <p class="feature__text">Виберіть влучне ім’я для свого сайту — ми зареєструємо домен безкоштовно при оплаті на рік. Або безкоштовно перенесемо ваш існуючий сайт.</p>
+          </div>
+        </article>
+
+        <article class="features__item feature">
+          <div class="feature__icon-circle feature__icon-circle--pink">
+            <img src="https://hostiq.ua/images2019/design/block_features-logo/virt-services-reporting.svg" alt="" class="feature__icon">
+          </div>
+          <div class="feature__content">
+            <h3 class="feature__title">Рухлива техпідтримка 24/7</h3>
+            <p class="feature__text">Ми завжди поруч. Пишіть або телефонуйте — оператори відповідають зазвичай менш ніж за 1 хвилину.</p>
+          </div>
+        </article>
+
+        <article class="features__item feature">
+          <div class="feature__icon-circle feature__icon-circle--purple">
+            <img src="https://hostiq.ua/images2019/design/block_features-logo/virt-services-reporting.svg" alt="" class="feature__icon">
+          </div>
+          <div class="feature__content">
+            <h3 class="feature__title">Запаморочлива SSD-швидкість</h3>
+            <p class="feature__text">Ваш сайт працюватиме у 5 разів швидше завдяки SSD-дискам — користувачі точно залишаться з вами.</p>
+          </div>
+        </article>
+
+        <article class="features__item feature">
+          <div class="feature__icon-circle feature__icon-circle--orange">
+            <img src="https://hostiq.ua/images2019/design/block_features-logo/virt-services-reporting.svg" alt="" class="feature__icon">
+          </div>
+          <div class="feature__content">
+            <h3 class="feature__title">Зручний конструктор з шаблонами</h3>
+            <p class="feature__text">Обирайте з десятків шаблонів або створюйте сторінку з готових блоків без знань коду.</p>
+          </div>
+        </article>
+
+        <article class="features__item feature">
+          <div class="feature__icon-circle feature__icon-circle--yellow">
+            <img src="https://hostiq.ua/images2019/design/block_features-logo/virt-services-reporting.svg" alt="" class="feature__icon">
+          </div>
+          <div class="feature__content">
+            <h3 class="feature__title">30-денна гарантія повернення</h3>
+            <p class="feature__text">Якщо вам не сподобається сервіс, ми повернемо кошти протягом перших 30 днів.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === Модальне вікно === -->
+  <div class="modal" id="modal">
+    <div class="modal__overlay" id="closeModal"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="closeModalBtn">&times;</button>
+      <h2 class="modal__title">Вибір тарифу</h2>
+      <p class="modal__text">Залиште свій email, і ми допоможемо підібрати найкращий тариф для вашого сайту-візитки.</p>
+      <form class="modal__form">
+        <input type="email" class="modal__input" placeholder="Ваш email" required>
+        <button type="submit" class="modal__submit button">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const openModal = document.getElementById('openModal');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    openModal.addEventListener('click', () => {
+      modal.classList.add('modal--active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('modal--active');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('modal--active');
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') modal.classList.remove('modal--active');
+    });
+  </script>
+
+</body>
+</html>
